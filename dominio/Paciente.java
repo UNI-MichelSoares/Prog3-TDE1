@@ -45,7 +45,7 @@ public class Paciente {
 	}
 	
 	public void listarPacientes() {
-		System.out.println("ID: " +id_paciente +"Nome: " +nome_paciente +"Peso: " +peso_paciente +"Altura: " +altura_paciente);
+		System.out.println("ID: " +id_paciente +" Nome: " +nome_paciente +" Peso: " +peso_paciente +" Altura: " +altura_paciente);
 	}
 	
 }

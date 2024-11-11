@@ -36,8 +36,6 @@ public class ControlaPaciente {
 			paciente.setAltura_paciente(novaAltura);
 			
 			System.out.println("Paciente editado com sucesso!");
-			
-			scanner.close();
 		}
 		else {
 			System.out.println("Paciente de ID:" +id +" não encontrado!");
@@ -96,10 +94,14 @@ public class ControlaPaciente {
             case 1:
             	System.out.print("ID do paciente: ");
             	int id = scanner.nextInt();
+            	scanner.nextLine();
+            	
             	System.out.print("Nome do paciente: ");
             	String nome = scanner.nextLine();
+            	
             	System.out.print("Peso do paciente: ");
             	double peso = scanner.nextDouble();
+            	
             	System.out.print("Altura do paciente: ");
             	double altura = scanner.nextDouble();
             	
@@ -111,6 +113,7 @@ public class ControlaPaciente {
             case 3:
             	System.out.print("ID do paciente: ");
             	int idAlterar = scanner.nextInt();
+            	scanner.nextLine();
             	controle.editarPaciente(idAlterar);
             	break;
             case 4:
